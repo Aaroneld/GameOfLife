@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'ThinDesign';
+    src: local('ThinDesign'), url('./ThinDesign.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Monoid';
+    src: local('Monoid'), url('./Monoid-Regular.ttf') format('truetype')
+}
+
+
+@font-face {
+    font-family: 'Amarillo';
+    src: local('Amarillo'), url('./Amarillo.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'HamburgSymbols';
+    src: local('HamburgSymbols'), url('./HamburgSymbols.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Astrodings';
+    src: local('Astrodings'), url('./Astrodings.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'enochian';
+    src: local('enochian'), url('./enochian.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Kalocsai_Flowers';
+    src: local('Kalocsai_Flowers'), url('./Kalocsai_Flowers.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'moon_phases';
+    src: local('moon_phases'), url('./moon_phases.ttf') format('truetype')
+}
+
+
