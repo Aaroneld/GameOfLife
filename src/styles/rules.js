@@ -32,7 +32,8 @@ export default styled.div`
             }
 
             p {
-                margin: 2% 0;
+                margin: 4% 0;
+                line-height: 150%;
             }
         }
 
@@ -51,10 +52,11 @@ export default styled.div`
 
         p {
             text-align: left;
-            line-height: 169%;
+            line-height: 200%;
             font-weight: 700;
             font-size: 80%;
-            margin-bottom: 2%;
+            margin: 0 4%;
+            margin-bottom: 4%;
         }
     }
 
@@ -77,6 +79,7 @@ export default styled.div`
 
                 p {
                     margin: 5% 0;
+                    line-height: 140%
                 }
             }
 
@@ -93,6 +96,8 @@ export default styled.div`
         #description {
             p {
                 font-size: 110%;
+                margin: 0;
+                margin-bottom: 2%;
             }
         }
     }
