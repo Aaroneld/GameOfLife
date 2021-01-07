@@ -39,7 +39,7 @@ export default styled.div`
                 padding: 10% 3%;
                 overflow-y: cover;
                 font-family : ThinDesign;
-                font-size: 250%;
+                font-size: 200%;
                 font-weight: 500;
                 text-shadow: -4px 0px 0px rgba(92, 94, 94, .5);
                 text-decoration: underline;

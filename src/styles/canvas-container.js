@@ -39,7 +39,7 @@ export default styled.div`
         button {
             z-index: 4;
             width: 28%;
-            padding: 2.5vw 4%;
+            padding: 1vw 4%;
             margin: 0 2.5%;
             border-radius: 30px;
             border: 1px solid #fa6125;
@@ -63,7 +63,7 @@ export default styled.div`
 
         #pause {
             background-image: url(${bgImage}), url(${pause});
-            background-size: 115%, 40%;
+            background-size: 145%, 40%;
             background-position: center;
             
             &:hover {
@@ -75,7 +75,7 @@ export default styled.div`
 
         #reset {
             background-image: url(${bgImage}), url(${reset});
-            background-size: 100%, 30%;
+            background-size: 150%, 30%;
             background-position: right center, center;
         
 
@@ -89,7 +89,7 @@ export default styled.div`
 
         #play {
             background-image: url(${bgImage}), url(${play});
-            background-size: 105%, 30%;
+            background-size: 145%, 30%;
             background-position: left top, center;
 
             &:hover {
