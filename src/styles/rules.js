@@ -77,11 +77,18 @@ export default styled.div`
 
             flex-direction: row;
 
+     
             div {
+
+                h3 {
+                    font-size: 105%
+                }
+
 
                 p {
                     margin: 5% 0;
-                    line-height: 140%
+                    line-height: 140%;
+                    font-size: 100%;
                 }
             }
 

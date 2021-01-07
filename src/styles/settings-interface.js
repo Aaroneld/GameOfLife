@@ -92,6 +92,7 @@ export default styled.form`
         justify-content: flex-start;
         box-shadow: inset 30px -20px 6px -21px rgba(99,97,99,0.2);
         width: 78%;
+        margin-top: 5%;
 
         div {
 
