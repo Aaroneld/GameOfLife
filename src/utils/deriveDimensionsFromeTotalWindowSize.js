@@ -7,9 +7,9 @@ export default function deriveDimensionsFromTotalWindowSize () {
         if(window.innerWidth >= size.desktop) return window.innerWidth * .35
         if(window.innerWidth >= size.laptop && window.innerWidth < size.desktop) return  window.innerWidth * .4;
         else if(window.innerWidth <= size.laptop && window.innerWidth >= size.tablet - 1) return window.innerWidth * .63
-        else return window.innerWidth * .9
+        else return window.outerWidth * .9
     }
-  
+    console.log(window.outerWidth)
     const rawWidth = getRawWidth()
 
     if(rawWidth > window.innerHeight * (3/4))
