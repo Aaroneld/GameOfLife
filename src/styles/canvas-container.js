@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import bgImage from '../assets/images/image.png';
 import reset from '../assets/images/reset.png';
@@ -15,6 +15,7 @@ export default styled.div`
 
     margin: 4% 0;
 
+
     h3 {
         font-family: 'Amarillo';
         margin: 6% 0;
@@ -26,35 +27,6 @@ export default styled.div`
 
         @media ${deviceSize.desktop} {
             font-size: 150%;
-        }
-    }
-
-    #stage {
-        
-        position: relative;
-        margin: auto;
-        border-radius: 25% 30px 25% 30px;
-        -webkit-box-shadow: 14px 29px 24px 1px rgba(0,0,0,0.25);
-        -moz-box-shadow: 14px 29px 24px 1px rgba(0,0,0,0.25);
-        box-shadow: 14px 29px 24px 1px rgba(0,0,0,0.25);
-
-        canvas {
-            border: 1px solid #FFD166;
-            border-radius: 25% 30px 25% 30px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        #background-layer {
-            z-index: 1;
-            background: white;
-        }
-
-        #action {
-            z-index: 2;
-            background: none;
-            opacity: 1;
         }
     }
 

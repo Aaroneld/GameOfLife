@@ -1,13 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
-import ThinDesign from '../assets/fonts/ThinDesign.ttf';
-import Monoid from '../assets/fonts/Monoid-Regular.ttf';
-import Amarillo from '../assets/fonts/Amarillo.ttf';
-import Astrodings from '../assets/fonts/Astrodings.ttf';
-import Enochian from '../assets/fonts/enochian.ttf';
-import HamburgSymbols from '../assets/fonts/HamburgSymbols.ttf';
+import ThinDesign from '../assets/fonts/ThinDesign.woff2';
+import Monoid from '../assets/fonts/Monoid-Regular.woff2';
+import Amarillo from '../assets/fonts/Amarillo.woff2';
+import Astrodings from '../assets/fonts/Astrodings.woff2';
+import Enochian from '../assets/fonts/enochian.woff2';
+import HamburgSymbols from '../assets/fonts/HamburgSymbols.woff2';
 import KalocsaiFlowers from '../assets/fonts/Kalocsai_Flowers.ttf';
-import MoonPhases from '../assets/fonts/moon_phases.ttf';
+import MoonPhases from '../assets/fonts/moon_phases.woff2';
 
 export const size = {
     mobileS: 320,

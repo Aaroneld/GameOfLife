@@ -20,6 +20,7 @@ export default function openingAnim (canvas, ctx, cellSize, theme, font){
     ctx.fillStyle = colors[getRandomInt(colors.length)];
     ctx.globalAlpha = .65;
 
+
     ctx.fillRect(x, y, cellSize - 1, cellSize -1);
 
     ctx.fillStyle = colors[getRandomInt(colors.length)];
