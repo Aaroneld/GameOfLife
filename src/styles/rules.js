@@ -29,13 +29,13 @@ export default styled.div`
             h3 {
                 margin: 4% 0;
                 white-space: nowrap;
-                font-size: 85%;
+                font-size: 65%;
             }
 
             p {
                 margin: 4% 0;
                 line-height: 150%;
-                font-size: 80%
+                font-size: 60%
             }
         }
 
