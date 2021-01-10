@@ -23,7 +23,7 @@ export default function Rules() {
                 </div>
 
                 <div id="description">
-                    <p>Conway's Game of Life is a zero player game that plays out on a 2-dimesional
+                    <p>Conway's Game of Life is a zero player game that plays out on a 2-dimensional
                         grid filled with active and non-active cells of equidistant size. 
                         The game progresses by looking at the current state of each cell, and deriving a new one from it according to
                         the rules stated above. 
@@ -31,7 +31,7 @@ export default function Rules() {
 
                     <p>This game is a type of cellular automation whereby cells in the grid are informed 
                         of the nature (state) of their environment and can make decisions based on that "knowledge"
-                        according to an a priori ruleset without outside interference. The Game of Life is Turing complete,
+                        according to an a priori rule set without outside interference. The Game of Life is Turing complete,
                         and can be used to derived any currently known Turing Machine.
                     </p>
                 </div>
