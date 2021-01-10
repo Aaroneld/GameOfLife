@@ -106,7 +106,7 @@ export default styled.form`
             }
 
             label {
-                font-size: 70%;
+                font-size: 100%;
                 margin-left:2%;
             }
         }
@@ -139,7 +139,7 @@ export default styled.form`
             flex-direction: column;
 
             label {
-                font-size: 100%;
+                font-size: 80%;
                 margin: 0 auto;
             }
         }
@@ -148,6 +148,14 @@ export default styled.form`
 
     @media ${deviceSize.desktop}{
         width: 85%;
+
+        div {
+
+            label {
+
+                font-size: 100%;
+            }
+        }
     }
 
 `;

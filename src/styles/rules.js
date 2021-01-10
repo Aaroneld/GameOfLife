@@ -113,9 +113,10 @@ export default styled.div`
 
     @media ${deviceSize.laptop} {
         max-height: 86vh;
-        width: 92%;
+        width: 95%;
         border-top: none;
-        margin-top: 5%;
+        margin-top: 7%;
+        margin-left: 0;
 
         #rules {
             div {
@@ -140,7 +141,7 @@ export default styled.div`
 
             
             p {
-                    font-size: 65%;
+                    font-size: 1.3vh;
             }
                 
             }
@@ -154,7 +155,7 @@ export default styled.div`
 
         #description {
             p {
-                font-size: 85%;
+                font-size: 1.57vh;
                 line-height: 170%;
             }
         }
@@ -181,9 +182,15 @@ export default styled.div`
             min-height: 1px;
             max-height: 45vh;
 
+            p:first-child{
+
+                margin-bottom: 3%;
+                margin-top: 2%;
+            } 
+
 
             p {
-                font-size: 117%;
+                font-size: 1.86vh;
             }
         }
         

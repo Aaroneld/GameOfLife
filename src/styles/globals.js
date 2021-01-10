@@ -88,6 +88,8 @@ export const GlobalStyle = createGlobalStyle`
   
     .app {
 
+      overflow-y: hidden;
+      max-height: 100vh;
 
   
       #canvas { grid-area: canvas; }

@@ -76,9 +76,11 @@ export default function CanvasContainer({ cFont, cTheme, cPreset, ranVar, canvas
 
     };
 
+    
     return (
         <Container>
-            <h3>{` Iterations: ${iteration}`}</h3>
+            <h3
+            >{` Iterations: ${iteration}`}</h3>
             <ErrorBoundary>
                 <Suspense fallback={<StageFallback canvasWidth={canvasWidth} />}>
                     <Stage 
