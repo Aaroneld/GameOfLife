@@ -32,10 +32,38 @@ Conway's Game of Life is a type of cellular automation* whereby cells arranged i
 
 4. Allow a user to reset the game 
 
-### Additional Function
+### Additional Functions
 
-1. Allow the user to generate a randomize input of cells
+1. Allow the user to generate a randomized input of cells
 
 2. Allow the user to affect aesthethic changes to the game display (font/color)
 
 3. Allow to pick from a selection of preset starting states 
+
+## Solution Domain 
+
+This application is implemented completely client-side as a single page application there is no need for long term data persistence so access to a remote server is not necessary.   
+
+### Tech Stack
+1. React
+2. HTML Canvas 
+
+### Additional APIs
+1. Style Components
+2. styled-reset
+3. GSAP
+
+#### Qualifications 
+
+React is a front-end JavaScript library whose purpose is to help developers rapidly build user interfaces, its ability to represent chunks of HTML in componetized functions which have the ability to reference internal state is endemically useful to the goal at hand. A game like the Game of Life naturally relies on state which evolves over time React can help to keep track of this. Furthermore React aids in code organization which will help to compartmentalize the different aspects of the application so that they can be developed in relative isolation until the moment they are to be integrated. 
+
+HTML Canvas will be the technology used to handle the visual aspects of the game, in essence the rendering of the game state to the screen within the constraint of aesthetic considerations. HTML Canvas is hardware accelerated which helps with performance considerations and provides the developer with an robust interface that facilitates painting to the screen according to code logic.
+
+Similar to the idea of React bringing HTML in JavaScript, styled components allow a developer to bring CSS into componenetized functions. Furthermore their structure can be shaped as to have a 1:1 correspondance between a React component and its styling using a LESSlike syntax. This is organizationally useful and aids in coding efficiency.
+
+Styled reset offers a simple solution for applying the *Eric Meyers CSS Reset* to a developer's React application ensuring styling homegeniety across different browers.
+
+GSAP is an animation library which helps to standardize DOM-based animation across web browsers including with the use of SVGs. Furthermore it provides a programming interface that makes complex animations more simple then if they were implemented purely in CSS 
+
+
+
