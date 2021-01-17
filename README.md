@@ -27,3 +27,21 @@ Conway's Game of Life is a type of cellular automation* whereby cells arranged i
 <sub>*A cellular automaton is a collection of "colored" cells on a grid of specified shape that evolves through a number of discrete time steps according to a set of rules based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired</sub>
 
 <sub>**Turing complete is a term used in computability theory to describe abstract machines, usually called automata. Such an automaton is Turing complete, if it can be used to emulate a Turing machine. It is also called computationally universal. Most modern programming languages are Turing-complete</sub>
+
+### Basic Functions 
+
+1. Allow a user to turn grid cells on and off
+
+2. Allow a user to start the game
+
+3. Allow a user to pause the game
+
+4. Allow a user to reset the game 
+
+### Additional Function
+
+1. Allow the user to generate a randomize input of cells
+
+2. Allow the user to affect aesthethic changes to the game display (font/color)
+
+3. Allow to pick from a selection of preset starting states 
