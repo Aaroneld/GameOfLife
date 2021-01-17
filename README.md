@@ -8,17 +8,11 @@ The problem is thus, implement Conway's game of life as a robustly interactive s
 
 ### The Rules
  
-#### For a cell that is 'populated'
-
--- Each cell with one or less neighbors dies, as if by solitude
-
--- Each cell with four or more neighbors dies, as if by overpopulation
-
--- Each cell with two or 3 three neighbors survives
-
-#### For a cell that is 'unpopulated'
-
--- Each cell with three neighbors becomes populated
+| For a cell that is 'populated' | For a cell that is 'unpopulated' |
+| ----------------------------------  | ------------------------------------- |
+|-- Each cell with one or less neighbors dies, as if by solitude|-- Each cell with three neighbors becomes populated|
+|-- Each cell with four or more neighbors dies, as if by overpopulation|
+|-- Each cell with two or 3 three neighbors survives|
 
 ### Description
 
