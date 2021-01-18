@@ -1,10 +1,12 @@
-# Conways Game of Life
+# Conway's Game of Life
+
+## Description 
+
+Conway's Game of Life is a zero player game that plays out on a 2-dimensional grid filled with active and non-active cells of equidistant size. The game progresses by looking at the current state of each cell, and deriving a new one from it according to a defined ruleset. This project allows users to play the game via a web application interface and is a case study for implementing interactive games on the web via HTML Canvas and React.
 
 ## Problem Domain 
 
-Conway's Game of Life is a zero player game that plays out on a 2-dimesional grid filled with active and non-active cells of equidistant size. The game progresses by looking at the current state of each cell, and deriving a new one from it according to these rules.
-
-The problem is thus, implement Conway's game of life as a robustly interactive single page application according to the game's ruleset. Give user the information necessary to understand how to set the game in motion. Allow users a selection of functions which make the game fundamentally interactive, as well as ones which can be use to alter the game in more complex and/or specifically visual ways.
+The problem is thus, implement Conway's game of life as a robustly interactive single page application according to the game's ruleset. Give the user the information necessary to understand how to set the game in motion. Allow users a selection of functions which make the game fundamentally interactive, as well as ones which can be used to alter the game in more complex and/or specifically visual ways.
 
 ### The Rules
  
@@ -14,13 +16,13 @@ The problem is thus, implement Conway's game of life as a robustly interactive s
 |-- Each cell with four or more neighbors dies, as if by overpopulation|
 |-- Each cell with two or 3 three neighbors survives|
 
-### Description
+### Interface Description
 
-Conway's Game of Life is a type of cellular automation* whereby cells arranged in a are informed of the nature (state) of their environment and can make decisions based on that "knowledge" according to an a priori ruleset without outside interference. The Game of Life is "Turing complete**", and can be used to derived any currently known [Turing Machine](https://simple.wikipedia.org/wiki/Turing_machine).
+Conway's Game of Life is a type of cellular automation* whereby cells arranged in a are informed of the nature (state) of their environment and can make decisions based on that "knowledge" according to an a priori ruleset without outside interference. The Game of Life is "Turing complete**", and can be used to derive any currently known [Turing Machine](https://simple.wikipedia.org/wiki/Turing_machine).
 
 <sub>*A cellular automaton is a collection of "colored" cells on a grid of specified shape that evolves through a number of discrete time steps according to a set of rules based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired</sub>
 
-<sub>**Turing complete is a term used in computability theory to describe abstract machines, usually called automata. Such an automaton is Turing complete, if it can be used to emulate a Turing machine. It is also called computationally universal. Most modern programming languages are Turing-complete</sub>
+<sub>**Turing complete is a term used in computability theory to describe abstract machines, usually called automata. Such an automaton is Turing complete, if it can be used to simulate a Turing machine. It is also called computationally universal. Most modern programming languages are Turing-complete</sub>
 
 ### Basic Functions 
 
@@ -36,7 +38,7 @@ Conway's Game of Life is a type of cellular automation* whereby cells arranged i
 
 1. Allow the user to generate a randomized input of cells
 
-2. Allow the user to affect aesthethic changes to the game display (font/color)
+2. Allow the user to affect aesthetic changes to the game display (font/color)
 
 3. Allow to pick from a selection of preset starting states 
 
@@ -55,15 +57,13 @@ This application is implemented completely client-side as a single page applicat
 
 #### Qualifications 
 
-React is a front-end JavaScript library whose purpose is to help developers rapidly build user interfaces, its ability to represent chunks of HTML in componetized functions which have the ability to reference internal state is endemically useful to the goal at hand. A game like the Game of Life naturally relies on state which evolves over time React can help to keep track of this. Furthermore React aids in code organization which will help to compartmentalize the different aspects of the application so that they can be developed in relative isolation until the moment they are to be integrated. 
+React is a front-end JavaScript library whose purpose is to help developers rapidly build user interfaces, its ability to represent chunks of HTML in componentized functions which have the ability to reference internal state is endemically useful to the goal at hand. A game like the Game of Life naturally relies on state which evolves over time React can help to keep track of this. Furthermore React aids in code organization which will help to compartmentalize the different aspects of the application so that they can be developed in relative isolation until the moment they are to be integrated. 
 
-HTML Canvas will be the technology used to handle the visual aspects of the game, in essence the rendering of the game state to the screen within the constraint of aesthetic considerations. HTML Canvas is hardware accelerated which helps with performance considerations and provides the developer with an robust interface that facilitates painting to the screen according to code logic.
+HTML Canvas will be the technology used to handle the visual aspects of the game, in essence the rendering of the game state to the screen within the constraint of aesthetic considerations. HTML Canvas is hardware accelerated which helps with performance considerations and provides the developer with a robust interface that facilitates painting to the screen according to code logic.
 
-Similar to the idea of React bringing HTML in JavaScript, styled components allow a developer to bring CSS into componenetized functions. Furthermore their structure can be shaped as to have a 1:1 correspondance between a React component and its styling using a LESSlike syntax. This is organizationally useful and aids in coding efficiency.
+Similar to the idea of React bringing HTML in JavaScript, styled components allow a developer to bring CSS into componentized functions. Furthermore their structure can be shaped to have a 1:1 correspondence between a React component and its styling using a LESSlike syntax. This is organizationally useful and aids in coding efficiency.
 
-Styled reset offers a simple solution for applying the *Eric Meyers CSS Reset* to a developer's React application ensuring styling homegeniety across different browers.
+Styled reset offers a simple solution for applying the *Eric Meyer's CSS Reset* to a developer's React application ensuring styling homogeneity across different browsers.
 
 GSAP is an animation library which helps to standardize DOM-based animation across web browsers including with the use of SVGs. Furthermore it provides a programming interface that makes complex animations more simple then if they were implemented purely in CSS 
-
-
 
