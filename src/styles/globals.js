@@ -1,37 +1,35 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-import ThinDesign from '../assets/fonts/ThinDesign.woff2';
-import Monoid from '../assets/fonts/Monoid-Regular.woff2';
-import Amarillo from '../assets/fonts/Amarillo.woff2';
-import Astrodings from '../assets/fonts/Astrodings.woff2';
-import Enochian from '../assets/fonts/enochian.woff2';
-import HamburgSymbols from '../assets/fonts/HamburgSymbols.woff2';
-import KalocsaiFlowers from '../assets/fonts/Kalocsai_Flowers.ttf';
-import MoonPhases from '../assets/fonts/moon_phases.woff2';
+import ThinDesign from "../assets/fonts/ThinDesign.woff2";
+import Monoid from "../assets/fonts/Monoid-Regular.woff2";
+import Amarillo from "../assets/fonts/Amarillo.woff2";
+import Astrodings from "../assets/fonts/Astrodings.woff2";
+import Enochian from "../assets/fonts/enochian.woff2";
+import HamburgSymbols from "../assets/fonts/HamburgSymbols.woff2";
+import KalocsaiFlowers from "../assets/fonts/Kalocsai_Flowers.ttf";
+import MoonPhases from "../assets/fonts/moon_phases.woff2";
 
 export const size = {
-    mobileS: 320,
-    mobileM: 375,
-    mobileL: 425,
-    tablet: 768,
-    laptop: 1025,
-    laptopL: 1440,
-    desktop: 1800
-  }
-  
-  
-  
- export const deviceSize = {
-    mobileS: `(min-width: ${size.mobileS}px)`,
-    mobileM: `(min-width: ${size.mobileM}px)`,
-    mobileL: `(min-width: ${size.mobileL}px)`,
-    tablet: `(min-width: ${size.tablet}px)`,
-    laptop: `(min-width: ${size.laptop}px)`,
-    laptopL: `(min-width: ${size.laptopL}px)`,
-    desktop: `(min-width: ${size.desktop}px)`,
-    desktopL: `(min-width: ${size.desktop}px)`
-  }
- 
+  mobileS: 320,
+  mobileM: 375,
+  mobileL: 425,
+  tablet: 768,
+  laptop: 1025,
+  laptopL: 1440,
+  desktop: 1800,
+};
+
+export const deviceSize = {
+  mobileS: `(min-width: ${size.mobileS}px)`,
+  mobileM: `(min-width: ${size.mobileM}px)`,
+  mobileL: `(min-width: ${size.mobileL}px)`,
+  tablet: `(min-width: ${size.tablet}px)`,
+  laptop: `(min-width: ${size.laptop}px)`,
+  laptopL: `(min-width: ${size.laptopL}px)`,
+  desktop: `(min-width: ${size.desktop}px)`,
+  desktopL: `(min-width: ${size.desktop}px)`,
+};
+
 export const GlobalStyle = createGlobalStyle`
   
     @font-face {
@@ -88,7 +86,7 @@ export const GlobalStyle = createGlobalStyle`
   
     .app {
 
-      overflow-y: hidden;
+     
       max-height: 100vh;
 
   
@@ -109,6 +107,7 @@ export const GlobalStyle = createGlobalStyle`
       }
   
       @media ${deviceSize.laptop} {
+        overflow-y: hidden;
         display: grid;
         grid-template-columns: 45% 20% 35%;
         gap: 0px 0px;

@@ -33,7 +33,7 @@ export default function Stage({
             updateCell, 
             deriveNextState, 
             randomize, 
-            applyPreset} = useGameState(cellSizeFactor);
+            applyPreset } = useGameState(cellSizeFactor);
 
     const prerenderOpenAnim = () => {
         bCanvas.width = bCanvas.height = canvas.width;
@@ -56,7 +56,6 @@ export default function Stage({
     const cellsRef = useRef(null);
     const [bCanvas, bCtx] = useCanvasBuffer();
     const [addFrame, cancel] = useAnimation();
-    
     
 
     const [bgCtx, setBgCtx] = useState();
@@ -116,11 +115,7 @@ export default function Stage({
                 }, 1000);
            
             }
-            // if(animPhase === 1){
-                
-            //     cancel()
-            //     addFrame(15, prerenderOpenAnim, bCanvas, bCtx, ctx);
-            // }
+
         }
 
     }, [bgCtx, ctx, cTheme]);
@@ -242,6 +237,7 @@ export default function Stage({
                     id="action"
                     ref={actionRef}
                     />
+                <p>{{a: "sadsad"}}</p>
             </div>
         </Container> 
     )

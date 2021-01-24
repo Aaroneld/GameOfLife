@@ -26,7 +26,7 @@ export const changeCell = (
     }
     else {
 
-        ctx.globalAplha = 1;
+        ctx.globalAlpha = 1;
         
         ctx.fillStyle = colors[getRandomInt(colors.length)];
         ctx.fillRect(cell[0], cell[1], cellSize, cellSize)

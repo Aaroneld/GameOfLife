@@ -17,7 +17,7 @@ const flipIn = keyframes`
 
 const Container = styled.div`
 
-animation: ${flipIn} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: ${flipIn} 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         
         position: relative;
         margin: auto;
