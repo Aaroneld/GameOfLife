@@ -107,7 +107,7 @@ export const GlobalStyle = createGlobalStyle`
       }
   
       @media ${deviceSize.laptop} {
-        overflow-y: hidden;
+      
         display: grid;
         grid-template-columns: 45% 20% 35%;
         gap: 0px 0px;
