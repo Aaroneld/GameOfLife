@@ -2,6 +2,7 @@ import { size } from "../styles/globals";
 
 export default function deriveDimensionsFromTotalWindowSize() {
   function getRawWidth() {
+    console.log(window.innerHeight, window.innerWidth);
     if (window.innerWidth >= size.desktop) return window.innerWidth * 0.35;
     if (window.innerWidth >= size.laptop && window.innerWidth < size.desktop)
       return window.innerWidth * 0.4;
@@ -12,7 +13,7 @@ export default function deriveDimensionsFromTotalWindowSize() {
       return window.innerWidth * 0.6;
     } else return window.outerWidth * 0.9;
   }
-  console.log(window.outerWidth);
+
   const rawWidth = getRawWidth();
 
   if (rawWidth > window.innerHeight * (3 / 4)) {

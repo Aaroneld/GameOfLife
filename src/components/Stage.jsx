@@ -37,7 +37,7 @@ export default function Stage({
 
   const prerenderOpenAnim = () => {
     bCanvas.width = bCanvas.height = canvas.width;
-    console.log(canvas.width, cellSizeFactor);
+
     openingAnim(bCanvas, bCtx, canvas.width * cellSizeFactor, cTheme, cFont);
     ctx.drawImage(bCanvas, 0, 0);
   };
@@ -200,8 +200,6 @@ export default function Stage({
 
   useLayoutEffect(() => {
     if (animPhase === 2) {
-      console.log("here", cPreset);
-
       setInitialCellState();
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
