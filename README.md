@@ -19,7 +19,7 @@ To install simply pull the code to your local machine, run `npm i` to install th
 
 ## Problem Domain 
 
-The problem is thus, implement Conway's game of life as a robustly interactive single page application according to the game's ruleset. Give the user the information necessary to understand how to set the game in motion. Allow users a selection of functions which make the game fundamentally interactive, as well as ones which can be used to alter the game in more complex and/or specifically visual ways.
+The problem was thus, implement Conway's Game of Life as a robustly, interactive, responsive, single page application according to the game's ruleset. Give the user the information necessary to understand how to set the game in motion. Allow users a selection of functions which make the game fundamentally interactive, as well as ones which can be used to alter the game in more complex and/or specifically visual ways.
 
 ### The Rules
  
@@ -61,9 +61,9 @@ This application is implemented completely client-side as a single page applicat
 
 #### Qualifications 
 
-`React` is a front-end JavaScript library whose purpose is to help developers rapidly build user interfaces, its ability to represent chunks of HTML in componentized functions which have the ability to reference internal state is endemically useful to the goal at hand. A game like the Game of Life naturally relies on state which evolves over time React can help to keep track of this. Furthermore React aids in code organization which will help to compartmentalize the different aspects of the application so that they can be developed in relative isolation until the moment they are to be integrated. 
+`React` is a front-end JavaScript library whose purpose is to help developers rapidly build user interfaces, its ability to represent chunks of HTML in componentized functions which have the ability to reference internal state is endemically useful to the goal at hand. A game like the Game of Life naturally relies on state which evolves over time React can help to keep track of this. Furthermore React aids in code organization which helps to compartmentalize the different aspects of the application so that they can be developed in relative isolation until the moment they are to be integrated. 
 
-`HTML Canvas` will be the technology used to handle the visual aspects of the game, in essence the rendering of the game state to the screen within the constraint of aesthetic considerations. HTML Canvas is hardware accelerated which helps with performance considerations and provides the developer with a robust interface that facilitates painting to the screen according to code logic.
+`HTML Canvas` will be the technology used to handle the visual aspects of the game, in essence the rendering of the game state to the screen within the constraints of aesthetic considerations. HTML Canvas is hardware accelerated which helps with performance concerns and provides the developer with a robust interface that facilitates painting to the screen according to code logic.
 
 `Styled Components` allow a developer to bring CSS into componentized functions. Furthermore their structure can be shaped to have a 1:1 correspondence between a React component and its styling using a LESSlike syntax. This is organizationally useful and aids in coding efficiency.
 
