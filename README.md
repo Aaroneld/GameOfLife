@@ -4,13 +4,13 @@
 
 ## Description 
 
-Conway's Game of Life is a type of cellular automation* whereby cells arranged in a grid are informed of the nature (state) of their environment and can make decisions based on that "knowledge" according to an a priori ruleset without outside interference. The Game of Life is "Turing complete**", and can be used to derive any currently known [Turing Machine](https://simple.wikipedia.org/wiki/Turing_machine).
+Conway's Game of Life is a type of cellular automation¹ whereby cells arranged in a grid are informed of the nature (state) of their environment and can make decisions based on that "knowledge" according to an a priori ruleset without outside interference. The Game of Life is "Turing complete"², and can be used to derive any currently known [Turing Machine](https://simple.wikipedia.org/wiki/Turing_machine).
 
 This project allows users to play the game via a web application interface and is a case study for implementing interactive games on the web via HTML Canvas and React.
 
-<sub>*A cellular automaton is a collection of "colored" cells on a grid of specified shape that evolves through a number of discrete time steps according to a set of rules based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired</sub>
+<sub>¹ A cellular automaton is a collection of "colored" cells on a grid of specified shape that evolves through a number of discrete time steps according to a set of rules based on the states of neighboring cells. The rules are then applied iteratively for as many time steps as desired</sub>
 
-<sub>**Turing complete is a term used in computability theory to describe abstract machines, usually called automata. Such an automaton is Turing complete, if it can be used to simulate a Turing machine. It is also called computationally universal. Most modern programming languages are Turing-complete</sub>
+<sub>² Turing complete is a term used in computability theory to describe abstract machines, usually called automata. Such an automaton is Turing complete, if it can be used to simulate a Turing machine. It is also called computationally universal. Most modern programming languages are Turing-complete</sub>
 
 
 ## Installation 
