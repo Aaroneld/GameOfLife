@@ -150,7 +150,7 @@ export default styled.div`
   @media ${deviceSize.desktopS} {
     #description {
       p {
-        font-size: 120%;
+        font-size: 110%;
       }
     }
   }
@@ -171,6 +171,8 @@ export default styled.div`
     #description {
       min-height: 1px;
       max-height: 45vh;
+      font-size: 97%;
+      padding: 3%;
 
       p:first-child {
         margin-bottom: 3%;

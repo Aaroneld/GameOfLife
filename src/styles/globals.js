@@ -90,6 +90,7 @@ export const GlobalStyle = createGlobalStyle`
 
      
       max-height: 100vh;
+      overflow-x: hidden;
 
   
       #canvas { grid-area: canvas; }
