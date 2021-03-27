@@ -177,10 +177,6 @@ export default styled.div`
         margin-bottom: 3%;
         margin-top: 2%;
       }
-
-      p {
-        font-size: 130%;
-      }
     }
   }
 `;
