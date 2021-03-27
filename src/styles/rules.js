@@ -137,7 +137,7 @@ export default styled.div`
     width: 95%;
     margin-left: 0.5%;
     margin-top: 5%;
-    padding: "2%";
+    padding: 2%;
 
     #description {
       p {
@@ -171,7 +171,6 @@ export default styled.div`
     #description {
       min-height: 1px;
       max-height: 45vh;
-      padding: 3.5%;
 
       p:first-child {
         margin-bottom: 3%;
