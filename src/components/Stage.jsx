@@ -75,7 +75,7 @@ export default function Stage({
 
   useEffect(() => {
     cellsRef.current = cells;
-    addFrame(300, prerenderMainAnim, bCanvas, bCtx, ctx);
+    addFrame(100, prerenderMainAnim, bCanvas, bCtx, ctx);
   }, [triggerAddFrame]);
 
   useEffect(() => {
@@ -222,7 +222,7 @@ export default function Stage({
   const handleCanvasClick = (e) => {
     if (animPhase === 1) {
       cancel();
-      curtain(200, canvas, ctx, canvas.width * cellSizeFactor);
+      curtain(1000 / 16, canvas, ctx, canvas.width * cellSizeFactor);
 
       setPhase(animPhase + 1);
     }

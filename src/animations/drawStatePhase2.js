@@ -1,41 +1,58 @@
-import { fontCollection , colorThemes } from './resources';
+import { fontCollection, colorThemes } from "./resources";
 
-function getRandomInt(max){
-    return Math.floor(Math.random() * max);
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
-export const drawStateP2 = (
-    canvas,
-    ctx,
-    cellsize,
-    cells,
-    theme,
-    font
-) => 
-{      
-    const colors = colorThemes[theme].colors;
-    const wordColors = colorThemes[theme].words;
-    const fontLetters = fontCollection[font];
+export const drawStateP2 = (canvas, ctx, cellSize, cell, theme, font) => {
+  const colors = colorThemes[theme].colors;
+  const wordColors = colorThemes[theme].words;
+  const fontLetters = fontCollection[font];
 
-    cells.forEach((r, rIndex) => {
-        r.forEach((c, cIndex) => {
-            if(cells[rIndex][cIndex] === 1){
+  cell.forEach((r, rIndex) => {
+    r.forEach((c, cIndex) => {
+      if (cell[rIndex][cIndex] === 1) {
+        ctx.fillStyle = colors[getRandomInt(colors.length)];
+        ctx.globalAlpha = 0.85;
 
-                ctx.globalAlpha = 1;
+        console.log(ctx.fillStyle, "22");
 
-                ctx.fillStyle = colors[getRandomInt(colors.length)];
-                ctx.fillRect(cIndex * cellsize, rIndex * cellsize, cellsize, cellsize);
+        ctx.fillRect(cIndex * cellSize, rIndex * cellSize, cellSize, cellSize);
 
-                ctx.font = `${canvas.width * .04 * .75}px ${font}`;
+        ctx.fillStyle = colors[getRandomInt(colors.length)];
+        ctx.globalAlpha = 0.3;
 
-                ctx.fillStyle = wordColors[getRandomInt(wordColors.length)];
-                const letter = fontLetters[getRandomInt(fontLetters.length)];
-                ctx.fillText(`${letter}`, cIndex * cellsize + (cellsize * .15), rIndex * cellsize + (cellsize * .72))
-                    
-            }else {
-                console.log('clear');
-                ctx.clearRect(cIndex * cellsize, rIndex * cellsize, cellsize, cellsize);
-            }
-        })
-    })
-}
+        ctx.fillRect(
+          cIndex * cellSize + 8,
+          rIndex * cellSize + 8,
+          cellSize,
+          cellSize
+        );
+
+        ctx.fillStyle = colors[getRandomInt(colors.length)];
+        ctx.globalAlpha = 0.2;
+
+        ctx.fillRect(
+          cIndex * cellSize + 14,
+          rIndex * cellSize + 14,
+          cellSize,
+          cellSize
+        );
+
+        ctx.globalAlpha = 1;
+
+        ctx.font = `${canvas.width * 0.04 * 0.75}px ${font}`;
+        ctx.fillStyle = wordColors[getRandomInt(wordColors.length)];
+        const letter = fontLetters[getRandomInt(fontLetters.length)];
+        ctx.fillText(
+          `${letter}`,
+          cIndex * cellSize + cellSize * 0.15,
+          rIndex * cellSize + cellSize * 0.72
+        );
+      } else {
+        console.log("clear");
+        ctx.clearRect(cIndex * cellSize, rIndex * cellSize, cellSize, cellSize);
+      }
+    });
+  });
+};

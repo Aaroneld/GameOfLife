@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 const flipIn = keyframes`
   0% {
@@ -13,7 +13,7 @@ const flipIn = keyframes`
     -moz-box-shadow: 14px 29px 24px 1px rgba(0,0,0,0.25);
    
   }
-`
+`;
 
 const Container = styled.div`
 
@@ -49,12 +49,13 @@ const Container = styled.div`
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 300%;
+            font-size: 500%;
             color: white;
-            font-family: Monoid;
+            font-family: ThinDesign;
             text-decoration: underline;
             content: 'Click Me';
             opacity: 0;
+            letter-spacing: 7px;
 
             }
 
@@ -103,4 +104,4 @@ const Container = styled.div`
 
 `;
 
-export default Container
+export default Container;
